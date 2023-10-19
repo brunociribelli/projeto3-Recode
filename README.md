@@ -4,7 +4,7 @@
 
 🛅  Apresentar seus serviços e melhorar os serviços oferecidos aos seus clientes. 
 
-💻  Nesta atividade, vamos usar os conceitos de Java.
+💻  Nesta atividade, vamos usar os conceitos de banco de dados + Java.
       
 <table>
   <tr>
