@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Projeto-agencia-de-viagem/html/css/style.css">
+    <link rel="stylesheet" href="/Projeto-agencia-de-viagem/html/css/media.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https: //fonts.googleapis.com/css2?family= Poppins:wght@400;500 ; 600;700 & display=swap"
+        rel="stylesheet">
+    <script src='https://kit.fontawesome.com/4c729db828.js' crossorigin='anonymous'></script>
+    <title>Destino</title>
+</head>
+ <!--Inicio Corpo do Site Exclusivos-->
+
+ <style>
+
+.container-destino1 {
+      padding: 10px;
+    }
+
+    .container-destino2 {
+      padding: 10px;
+    }
+
+.card {
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+card {
+  
+  margin: auto;
+  width: 300px;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover, .card.hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.card:hover .card-content, .card.hover .card-content {
+  box-shadow: inset 0 3px 0 0 #17a2bf;
+  border-color: #17a2bf;
+}
+.card:hover .card-img .overlay, .card.hover .card-img .overlay {
+  background-color: rgba(25, 29, 38, 0.85);
+  transition: opacity 0.2s ease;
+  opacity: 1;
+}
+.card-img {
+  position: relative;
+  height: 224px;
+  width: 100%;
+  background-color: #fff;
+  transition: opacity 0.2s ease;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-img .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0;
+}
+.card-img .overlay .overlay-content {
+  line-height: 224px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.card-img .overlay .overlay-content a {
+  color: #fff;
+  padding: 0 2rem;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.card-img .overlay .overlay-content a:hover, .card-img .overlay .overlay-content a.hover {
+  background: #007cff;
+  border-color: #007cff;
+}
+.card-content {
+  width: 100%;
+  min-height: 104px;
+  background-color: #fff;
+  border-top: 1px solid #007cff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 1rem 2rem;
+  transition: all 0.2s ease;
+}
+.card-content a {
+  text-decoration: none;
+  color: #202927;
+}
+.card-content h2, .card-content a h2 {
+  
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #007cff;
+}
+.card-content p, .card-content a p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  overflow: hidden;
+  color: rgba(32, 41, 28, 0.8);
+}
+
+.btn-primary {
+    background-color: #17a2bf;
+    border-color: #17a2bf;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+    
+    </style>
+<body>
+
+    <!--Inicio Cabeça Topo do site-->
+    <div class="header">
+        <div class="nav_bar-top">
+            <div class="container-fluid">
+                <div class="text-container">
+                    <div class="text-content">
+
+
+                    </div>
+
+
+                    <!--Fim Cabeça Topo do site-->
+
+                    <div class="navbar-container">
+                        <!--Navbar Bootstrap-->
+
+                        <!--Inicio Navbar Topo-->
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">
+                                    <h3 class="logo">Des<span>tino.</span></h3>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav ms-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page"
+                                                href="/Projeto-agencia-de-viagem/html/index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link"
+                                                href="/Projeto-agencia-de-viagem/html/Destino.html">Destino</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link"
+                                                href="/Projeto-agencia-de-viagem/html/Promoções.html">Promoções</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link"
+                                          href="/Projeto-agencia-de-viagem/html/Contato.html">contato</a>
+                                      </li>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Fim Navbar Topo-->
+        <br><br><br><br>
+        <!--Inicio Destino -->
+
+        <div class="container-destino1" id="destino">
+          <div class="row">
+              <div class="col-lg-4">
+                  <div class="card">
+                      <img src="/Projeto-agencia-de-viagem/html/img/maldivas-foto.png" class="card-img-top" alt="maldivas">
+                      <div class="card-body">
+                          <h5 class="card-title">Maldivas</h5>
+                          <p class="card-text">R$: 570,00</p>
+                          <a href="/Projeto-agencia-de-viagem/html/Destino.html" class="btn btn-primary">Ver mais</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="card">
+                      <img src="/Projeto-agencia-de-viagem/html/img/FORTALEZA-BRASIL.png" class="card-img-top" alt="Fortaleza">
+                      <div class="card-body">
+                          <h5 class="card-title">Fortaleza</h5>
+                          <p class="card-text">R$: 570,00</p>
+                          <a href="/Projeto-agencia-de-viagem/html/Destino.html" class="btn btn-primary">Ver mais</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="card">
+                      <img src="/Projeto-agencia-de-viagem/html/img/Porto de galinhas-BRASIL.png" class="card-img-top" alt="Porto de galinhas">
+                      <div class="card-body">
+                          <h5 class="card-title">Porto de galinhas</h5>
+                          <p class="card-text">R$: 570,00</p>
+                          <a href="/Projeto-agencia-de-viagem/html/Destino.html" class="btn btn-primary">Ver mais</a>
+                      </div>
+                  </div>
+              </div>
+        
+          <br>
+
+          <div class="container-destino2" id="destino">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="/Projeto-agencia-de-viagem/html/img/PORTO-seguro-Brasil.png" class="card-img-top" alt="PORTO-seguro">
+                        <div class="card-body">
+                            <h5 class="card-title">Porto-Seguro</h5>
+                            <p class="card-text">R$: 570,00</p>
+                            <a href="/Projeto-agencia-de-viagem/html/Destino.html" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="/Projeto-agencia-de-viagem/html/img/Rio de janeiro-Brasil.png" class="card-img-top" alt="Destino 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Rio de janeiro</h5>
+                            <p class="card-text">R$: 570,00</p>
+                            <a href="/Projeto-agencia-de-viagem/html/Destino.html" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="/Projeto-agencia-de-viagem/html/img/miami-EUA.png" class="card-img-top" alt="Destino 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Miami</h5>
+                            <p class="card-text">R$: 570,00</p>
+                            <a href="/Projeto-agencia-de-viagem/html/Destino.html" class="btn btn-primary">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <!--Fim Destino -->
+    <br><br><br>
+
+        <!--Inicia Footer-->
+
+        <!--Inicio Rodape do Site -->
+        <footer class="footer">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="footer-blog">
+
+                            <h3>Menu</h3>
+                            <div>
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </div>
+                            <div>
+                                <a class="nav-link" href="#">Destino</a>
+                            </div>
+                            <div>
+                                <a class="nav-link" href="#">Promoções</a>
+                            </div>
+                            <div>
+                                <a class="nav-link" href="#">Contato</a>
+                            </div>
+
+                        </div>
+                    </div><!--Coluna 1-->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="footer-tags">
+                            <h3>Centrais de Atendimento</h3>
+                            <a href="#">Suporte Pós Venda (11) 5555 5555</a>
+                            <a href="#">Segunda à Sexta: 09h às 20h</a>
+                            <a href="#">Sábado e Feriados Nacionais: 09h às 16h</a>
+                            <a href="#">Informações COVID-19</a>
+                            <a href="#">Remarcações de viagens</a>
+                            <a href="#">SAC 11 5555 555</a>
+                            <a href="#">Central de Ajuda</a>
+
+                        </div>
+
+                    </div><!--Coluna 2-->
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="footer-newsletter">
+
+                            <h3>Newsletter</h3>
+                            <form class="form" action="#" method="post">
+                                <input class="campo" placeholder="Nome" required="">
+                                <input class="campo" placeholder="E-mail" required="">
+                                <button class="btn">Assinar</button>
+                            </form>
+                        </div>
+                    </div><!--Coluna 3-->
+                </div><!--row-->
+            </div><!--container-->
+            <div class="container">
+                <div class="footer-contact">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-6">
+                            <h4>E-mail</h4>
+                            <p class="para-text"><span class="span_text"><ion-icon
+                                        name="mail"></ion-icon></span>Email@gmail.com</p>
+                            <br>
+                            <p class="para-text"><span class="span_text"><ion-icon
+                                        name="headset"></ion-icon></span>Central
+                                de Atendimento:<b>(11) 5555-5555</b></p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br>
+                            <h4>Redes Sociais</h4>
+                            <a href=""><ion-icon class="icon-social-rodape" name="logo-facebook"></ion-icon></a>
+                            <a href=""><ion-icon class="icon-social-rodape" name="logo-instagram"></ion-icon></a>
+                            <a href=""><ion-icon class="icon-social-rodape" name="logo-youtube"></ion-icon></a>
+                            <a href=""><ion-icon class="icon-social-rodape" name="logo-twitter"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-6">
+                            <div class="copy-text">
+                                <p>&copy; <a href="#">Bruno Ciribelli - Todos os Direitos Reservados.</p>
+                            </div>
+                        </div>
+
+                        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed"
+                            style="display: block;">
+                            <button class="btn btn-primary" title="Back to Top">
+                                <i class="fa fa-angle-double-up"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div><!--container-->
+            </div><!--copyright-->
+
+        </footer>
+
+        <!--Fim Rodape do Site -->
+        <!--Fecha Footer-->
+
+
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
